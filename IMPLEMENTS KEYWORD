@@ -1,0 +1,22 @@
+//IMPLEMENTS KEYWORD IMPLEMEMTATION
+interface computer{
+    void compilecode();
+}
+class laptop implements computer{
+    public void compilecode(){
+        System.out.println("you got 10 errors");
+    }
+}
+class desktop implements computer{
+    public void compilecode(){
+        System.out.println("you got 5 errors");
+    }
+}
+public class oops2 {
+    public static void main(String[] args) {
+        laptop l=new laptop();
+        l.compilecode();
+        desktop d=new desktop();
+        d.compilecode();
+    }
+}
