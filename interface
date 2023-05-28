@@ -1,0 +1,31 @@
+interface   animal1{
+     void run();
+      void eat();
+
+}
+class tiger1 implements animal1{
+    public void run(){
+        System.out.println("tiger runs fastest than any animal");
+    }
+    public void eat() {
+        System.out.println("Tiger eats flesh");
+    }
+}
+class elephant1 implements animal1{
+    public void run(){
+        System.out.println("elephant is slow");
+    }
+    public void eat() {
+        System.out.println("elephant eats tree barks");
+    }
+}
+public class oops {
+    public static void main(String[] args) {
+tiger1 t=new tiger1();
+t.eat();
+t.run();
+elephant1 e=new elephant1();
+e.eat();
+e.run();
+    }
+}
