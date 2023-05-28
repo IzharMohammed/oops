@@ -1,0 +1,42 @@
+//ABSTRACT IMPLEMETATION
+abstract class animal2{
+    abstract public void run();
+    abstract void eat();
+    //we can declare a method in abstract class
+    void sleep(){
+        System.out.println(" all animals sleep at night");
+    }
+}
+class tiger2 extends animal2{
+   public void run(){
+       System.out.println("tiger runs fastest than any animal");
+
+   }
+    public void eat() {
+        System.out.println("Tiger eats flesh");
+
+    }
+}
+class elephant2 extends animal2{
+    public void run(){
+        System.out.println("elephant is slow");
+
+    }
+    public void eat() {
+        System.out.println("elephant eats tree barks");
+
+    }
+}
+public class oops1 {
+    public static void main(String[] args) {
+
+        tiger2 t=new tiger2();
+       t.eat();
+       t.run();
+       t.sleep();
+      elephant2 e=new elephant2();
+       e.eat();
+        e.run();
+        e.sleep();
+    }
+}
