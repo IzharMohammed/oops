@@ -1,0 +1,38 @@
+//EXTENDS IMPLEMENTATION
+class parent{
+    public void passion(){
+        System.out.println("Father is passionate in teaching");
+    }
+    public void like(){
+        System.out.println("father likes to eat samosa");
+    }
+    public void age(){
+        System.out.println("father age is 48");
+    }
+}
+class child extends parent{
+    //inherited methods
+    public void like() {
+        System.out.println("child doesnt likes to eat anything ");
+    }
+
+    public void passion() {
+        System.out.println("child is passionate in application development");
+    }
+    //child class specialised methods
+    public void like1(){
+        System.out.println("child is interested in football");
+    }
+}
+public class oops3 {
+    public static void main(String[] args) {
+parent p=new parent();
+p.like();
+p.passion();
+child c=new child();
+c.like();
+c.passion();
+c.like1();
+c.age();//PARENT CLASS METHOD INHERITED BY CHILD
+    }
+}
